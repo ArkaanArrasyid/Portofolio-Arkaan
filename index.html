@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkaan Arrasyid</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,103 +13,169 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-                <a href="#" class="logo">Arkaan<span>.</span></a>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">Arkaan<span>.</span></a>
 
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-                <button id="theme-toggle" class="theme-btn">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content profile-layout">
-            <div class="profile-img-container">
-                <img src="Gambar/profile.jpg" alt="Foto Profil Arkaan" class="profile-img">
-            </div>
-            
-            <div class="profile-text">
-                <h3>Hi, i'm</h3>
-                <h1>Arkaan Arrasyid</h1>
-                <p>Mahasiswa Sistem Informasi yang tertarik mempelajari pengembangan web, desain antarmuka dan suka bermain game.</p>
-            </div>
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <div class="profile-img-container">
+            <img src="Gambar/profile.jpg" alt="Foto Profil Arkaan" class="profile-img">
         </div>
-    </section>
 
-    <section id="about" class="about-section">
+        <div class="profile-text">
+            <h3>Hi, I'm</h3>
+            <h1>Arkaan Arrasyid</h1>
+            <p>Mahasiswa Sistem Informasi yang tertarik mempelajari pengembangan web, desain antarmuka, dan suka bermain game.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="about-container">
         <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Saya adalah seorang mahasiswa Sistem Informasi yang antusias dan tertarik dengan dunia Web Development dan UI/UX Design. Saat ini saya sedang memeperdalam HTML, CSS, JavaScript, PHP dan MySQL melalui project pribadi sekaligus membangun portofolio untuk mempersiapkan diri menuju dunia profesional. Saya percaya bahwa cara terbaik untuk belajar adalah dengan membangun project nyata dan terus mengembangkan skill melalui pengalaman langsung.</p>
 
+        <div class="about-text">
+            <p>
+                Saya adalah seorang mahasiswa Sistem Informasi yang antusias dan tertarik dengan dunia
+                Web Development dan UI/UX Design. Saat ini saya sedang memperdalam HTML, CSS,
+                JavaScript, PHP, dan MySQL melalui project pribadi sekaligus membangun portofolio
+                untuk mempersiapkan diri menuju dunia profesional. Saya percaya bahwa cara terbaik
+                untuk belajar adalah dengan membangun project nyata dan terus mengembangkan skill
+                melalui pengalaman langsung.
+            </p>
 
-                <h3>Tech Stack & Tools</h3>
-                <div class="skills">
-                    <span class="skill-badge">HTML</span>
-                    <span class="skill-badge">CSS</span>
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">PHP</span>
-                    <span class="skill-badge">MySQL</span>
-                    <span class="skill-badge">Figma</span>
-                </div>
+            <h3>Tech Stack &amp; Tools</h3>
+
+            <div class="skills">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">PHP</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Figma</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Web Personal Portfolio</h3>
-                    <p>Web berbasis HTML, CSS, dan JavaScript untuk menampilkan portofolio pribadi yang berisi daftar project-project yang telah saya kerjakan.</p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
+<section id="projects" class="projects-section">
+
+    <h2>My Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card" onclick="window.open('https://arkaanarrasyid.github.io/Portfolio/','_blank')">
+
+            <div class="project-thumbnail">
+                <img src="Gambar/WebPortfolio.png" alt="Screenshot Web Personal Portfolio" class="project-img">
             </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>UI Design Delivery Mobile App</h3>
-                    <p>Prototipe desain antarmuka aplikasi pengiriman mobile, dirancang dengan pendekatan yang berpusat pada pengguna.</p>
-                    <div class="project-tags">
-                        <span>Figma</span>
-                        <span>UI/UX</span>
-                    </div>
+
+            <div class="project-info">
+
+                <p class="project-type">Web Development</p>
+
+                <h3>Web Personal Portfolio</h3>
+
+                <p>
+                    Website portofolio pribadi yang dibangun menggunakan HTML, CSS, dan JavaScript
+                    untuk menampilkan project, kemampuan, serta perjalanan belajar saya.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
                 </div>
+
+                <p class="github-link">
+                    <a href="https://github.com/ArkaanArrasyid/Portfolio"
+                       target="_blank"
+                       onclick="event.stopPropagation();">
+                        <i class="fab fa-github"></i>
+                        View on GitHub →
+                    </a>
+                </p>
+
             </div>
+
         </div>
-    </section>
 
-    <section id="contact" class="contact-section">
+        <div class="project-card" onclick="window.open('LINK_FIGMA','_blank')">
+
+            <div class="project-thumbnail">
+                <img src="Gambar/B28 Coffee.jpeg" alt="Prototype UI B28 Coffee" class="project-img">
+            </div>
+
+            <div class="project-info">
+
+                <p class="project-type">UI/UX Design</p>
+
+                <h3>B28 Coffee Mobile App</h3>
+
+                <p>
+                    Prototype antarmuka aplikasi mobile bertema layanan delivery yang dirancang
+                    menggunakan Figma.
+                </p>
+
+                <div class="project-tags">
+                    <span>Figma</span>
+                    <span>UI Design</span>
+                    <span>Prototype</span>
+                </div>
+
+                <p class="github-link">
+                    <a href="https://www.figma.com/proto/8b7RY2JA77hrBNpO0Xng2F/B28-Coffee?node-id=16-508&p=f&t=1UyKGui190KEoPPf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A819"
+                       target="_blank"
+                       onclick="event.stopPropagation();">
+                        <i class="fa-brands fa-figma"></i>
+                        View on Figma →
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
         <h2>Contact Me</h2>
         <p>Punya proyek menarik atau ingin berdiskusi? Mari terhubung!</p>
+
         <div class="contact-links">
             <a href="https://wa.me/62895613494211" target="_blank" class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
             <a href="https://instagram.com/arknnrrsyid" target="_blank" class="contact-icon instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/ArkaanArrasyid" target="_blank" class="contact-icon github"><i class="fab fa-github"></i></a>
-            <a href="mailto:arknnrsyid111@gmail.com" class="contact-icon email" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://discord.com/invite/dTuJUH6b" target="_blank" class="contact-icon discord" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="mailto:arknnrsyid111@gmail.com" class="contact-icon email"><i class="fas fa-envelope"></i></a>
+            <a href="https://discord.com/invite/dTuJUH6b" target="_blank" class="contact-icon discord"><i class="fab fa-discord"></i></a>
         </div>
-    </section>
+    </div>
+</section>
 
+<footer>
+    <p>&copy; 2026 Designed &amp; Developed by Arkaan</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 Designed & Developed by Arkaan</i></p>
-    </footer>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
